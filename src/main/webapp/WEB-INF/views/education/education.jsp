@@ -33,14 +33,16 @@
                             <div>${title.description}</div>
 
                             <br>
-                            <a href="/editEducation/${title.id}">
-                                <input class="btn btn-success pull-left" type="submit" value="Edit"
-                                       id="searchButton"></input>
-                            </a>
-                            <br>
-                            <form method="post" action='<c:url value="/deleteEducation/${title.id}"/>'>
+                            <security:authorize access="hasRole('ROLE_ADMIN')">
+                                <a href="/editEducation/${title.id}">
+                                    <input class="btn btn-success pull-left" type="submit" value="Edit"
+                                           id="searchButton"></input>
+                                </a>
+                                <br>
+                                <form method="post" action='<c:url value="/deleteEducation/${title.id}"/>'>
                                 <input class="btn btn-success pull-left" type="submit" value="Delete"
                                        id="searchButton2"></input>
+                            </security:authorize>
                             </form>
                         </c:forEach>
                     </div>
@@ -51,10 +53,11 @@
         </section>
     </div>
 
-
+    <security:authorize access="hasRole('ROLE_ADMIN')">
     <a href="addEducation"/>
     <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję" id="searchButton1"></input>
 </a>
+</security:authorize>
 
 <hr class="m-0"/>
 

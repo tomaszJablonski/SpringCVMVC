@@ -29,12 +29,16 @@
                             <div class="subheading mb-3">${title.mainTask}</div>
                             <p>${title.description}</p>
 
-                        <a href="/editExperience/${title.id}" >
-                            <input class="btn btn-success pull-left" type="submit" value="Edit" id="searchButton"></input>
-                        </a>
-                        <form method="post" action='<c:url value="/deleteExperience/${title.id}"/>'>
-                            <input class="btn btn-success pull-left" type="submit" value="Delete" id="searchButton2"></input>
-                        </form>
+                                <security:authorize access="hasRole('ROLE_ADMIN')">
+                                    <a href="/editExperience/${title.id}">
+                                        <input class="btn btn-success pull-left" type="submit" value="Edit"
+                                               id="searchButton"></input>
+                                    </a>
+                                    <form method="post" action='<c:url value="/deleteExperience/${title.id}"/>'>
+                                        <input class="btn btn-success pull-left" type="submit" value="Delete"
+                                               id="searchButton2"></input>
+                                    </form>
+                                </security:authorize>
                             </c:forEach>
                     </div>
                     </div>
@@ -42,10 +46,11 @@
                 </div>
             </section>
         </div>
-            <a href="addExperience"/>
-            <input class="btn btn-success pull-left"  type="submit" value="Dodaj nową pozycję" id="searchButton1"></input>
-            </a>
-
+<security:authorize access="hasRole('ROLE_ADMIN')">
+    <a href="addExperience"/>
+    <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję" id="searchButton1"></input>
+    </a>
+</security:authorize>
             <hr class="m-0" />
             <%@include file="../dynamic/socialActions.jspf" %>
 

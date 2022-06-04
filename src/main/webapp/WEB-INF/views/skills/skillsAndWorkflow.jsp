@@ -46,19 +46,24 @@
 
                         </li>
                     </ul>
-
-                        <a href="/editWorkflow/${title.id}" >
-                            <input class="btn btn-success pull-left" type="submit" value="Edit" id="searchButton"></input>
-                        </a>
-                        <form method="post" action='<c:url value="/deleteWorkflow/${title.id}"/>'>
-                            <input class="btn btn-success pull-left" type="submit" value="Delete" id="searchButton2"></input>
-                        </form>
+                        <security:authorize access="hasRole('ROLE_ADMIN')">
+                            <a href="/editWorkflow/${title.id}">
+                                <input class="btn btn-success pull-left" type="submit" value="Edit"
+                                       id="searchButton"></input>
+                            </a>
+                            <form method="post" action='<c:url value="/deleteWorkflow/${title.id}"/>'>
+                                <input class="btn btn-success pull-left" type="submit" value="Delete"
+                                       id="searchButton2"></input>
+                            </form>
+                        </security:authorize>
                     </c:forEach>
                 </div>
             </section>
-            <a href="addWorkflow"/>
-            <input class="btn btn-success pull-left"  type="submit" value="Add new WorkFlow" id="searchButton1"></input>
-            </a>
+    <security:authorize access="hasRole('ROLE_ADMIN')">
+        <a href="addWorkflow"/>
+        <input class="btn btn-success pull-left" type="submit" value="Add new WorkFlow" id="searchButton1"></input>
+        </a>
+    </security:authorize>
         </div>
             <hr class="m-0" />
             <%@include file="../dynamic/socialActions.jspf" %>

@@ -20,19 +20,26 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <c:forEach items="${interests}" var="title">
-                    <p>${title.description}</p>
-                        <a href="/editInterestsDescription/${title.id}" >
-                            <input class="btn btn-success pull-left" type="submit" value="Edit" id="searchButton"></input>
-                        </a>
-                        <form method="post" action='<c:url value="/deleteInterests/${title.id}"/>'>
-                            <input class="btn btn-success pull-left" type="submit" value="Delete" id="searchButton2"></input>
-                        </form>
+                        <p>${title.description}</p>
+
+                        <security:authorize access="hasRole('ROLE_ADMIN')">
+                            <a href="/editInterestsDescription/${title.id}">
+                                <input class="btn btn-success pull-left" type="submit" value="Edit"
+                                       id="searchButton"></input>
+                            </a>
+                            <form method="post" action='<c:url value="/deleteInterests/${title.id}"/>'>
+                                <input class="btn btn-success pull-left" type="submit" value="Delete"
+                                       id="searchButton2"></input>
+                            </form>
+                        </security:authorize>
                     </c:forEach>
                         </div>
             </section>
-            <a href="addInterestsDescription"/>
-            <input class="btn btn-success pull-left"  type="submit" value="Add Description" id="searchButton1"></input>
-            </a>
+    <security:authorize access="hasRole('ROLE_ADMIN')">
+        <a href="addInterestsDescription"/>
+        <input class="btn btn-success pull-left" type="submit" value="Add Description" id="searchButton1"></input>
+        </a>
+    </security:authorize>
         </div>
 
             <hr class="m-0" />

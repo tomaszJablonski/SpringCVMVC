@@ -29,26 +29,21 @@ public class Authorisation extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
-                .antMatchers("/","/index",
+                .antMatchers("/", "/index",
                         "/education",
                         "/experience",
                         "/interests",
                         "/skills")
-                .hasAnyAuthority("ROLE_USER")
-                .antMatchers("/","/index",
-                        "/education",
-                        "/addEducation",
+                .hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+                .antMatchers("/addEducation",
                         "/editEducation",
-                        "/experience",
                         "/addExperience",
                         "/editExperience",
-                        "/interests",
                         "/addInterestsDescription",
                         "/editInterestsDescription",
-                        "/skills",
                         "/addWorkflow",
                         "/editWorkflow")
-                .hasAnyAuthority("Role_ADMIN")
+                .hasAnyAuthority("ROLE_ADMIN")
                 .and()
                 .csrf().disable()
                 .headers().frameOptions().disable()
