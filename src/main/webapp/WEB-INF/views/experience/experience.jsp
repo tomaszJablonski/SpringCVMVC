@@ -2,6 +2,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+           prefix="security" %>
 
 
 <!DOCTYPE html>
@@ -9,8 +11,8 @@
 
 <%@include file="../dynamic/head.jspf" %>
 
-    <body id="page-top">
-        <!-- Navigation-->
+<body id="page-top">
+<!-- Navigation-->
         <%@include file="../dynamic/navigation.jspf" %>
         <!-- Page Content-->
         <div class="container-fluid p-0">

@@ -20,15 +20,17 @@
                 </div>
                 <form class="user" method="post" action='<c:url value="/login"/>'>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="username" placeholder="enter your username...">
+                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                           aria-describedby="emailHelp" name="username" placeholder="enter your username...">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="enter your password...">
+                    <input type="password" class="form-control form-control-user" name="password"
+                           id="exampleInputPassword" placeholder="enter your password...">
                   </div>
                   <div class="form-group">
                     <div class="custom-control custom-checkbox small">
                       <input type="checkbox" class="custom-control-input" id="customCheck">
-                      <label class="custom-control-label" for="customCheck">Zapamiętaj mnie</label>
+                      <label class="custom-control-label" for="customCheck">Remember me</label>
                     </div>
                   </div>
                   <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">

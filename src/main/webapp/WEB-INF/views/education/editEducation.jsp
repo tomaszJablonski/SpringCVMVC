@@ -3,15 +3,18 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+           prefix="security" %>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <%@include file="../dynamic/head.jspf" %>
-    <body id="page-top">
-        <!-- Navigation-->
-        <%@include file="../dynamic/navigation.jspf" %>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
+<body id="page-top">
+<!-- Navigation-->
+<%@include file="../dynamic/navigation.jspf" %>
+<!-- Page Content-->
+<div class="container-fluid p-0">
             <!-- Education-->
 
             <form method="post" action="/editEducation/${education.id}" >
