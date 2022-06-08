@@ -17,6 +17,7 @@ public class EducationService {
 
 
     public void addNewSchool(Education education) {
+
         educationRepository.save(education);
     }
 
@@ -24,7 +25,7 @@ public class EducationService {
         return educationRepository.findAll();
     }
 
-    public Education getEducationById(Long id){
+    public Education getEducationById(Long id) {
         return educationRepository.findById(id).orElse(null);
     }
 

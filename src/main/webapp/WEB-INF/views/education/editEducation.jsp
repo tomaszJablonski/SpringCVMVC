@@ -17,14 +17,13 @@
 <div class="container-fluid p-0">
             <!-- Education-->
 
-            <form method="post" action="/editEducation/${education.id}" >
+            <form method="post" action="/editEducation/${education.id}">
 
                 <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <!-- Begin Page Content -->
-                    <div class="container-fluid">
-
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Edit Education</h2>
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
 
 
                             <!-- Content Row -->
@@ -55,23 +54,18 @@
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Start your study</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="date" name="dateStart"  placeholder="enter date here yyyy-MM-dd"
-                                                           value="<fmt:formatDate pattern = "yyyy-MM-dd" value = "${education.dateStart}" />">
+                                                    <input class="form-control" type="date" name="dateStart"
+                                                           value="${education.dateStart}">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">End your study</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="date" name="dateEnd"  placeholder="enter date here yyyy-MM-dd"
-                                                           value="<fmt:formatDate pattern = "yyyy-MM-dd" value = "${education.dateEnd}" />">
+                                                    <input class="form-control" type="date" name="dateEnd"
+                                                           value="${education.dateEnd}"/>
                                                 </div>
                                             </div>
-
-
-
-
-
 
                                         </div>
                                     </div>
@@ -79,8 +73,7 @@
                             </div>
 
 
-
-                    </div>
+                        </div>
 
                 </div>
 

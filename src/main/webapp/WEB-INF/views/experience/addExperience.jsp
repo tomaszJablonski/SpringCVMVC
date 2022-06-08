@@ -15,23 +15,22 @@
 <%@include file="../dynamic/navigation.jspf" %>
 <!-- Page Content-->
 <div class="container-fluid p-0">
-            <!-- Education-->
+    <!-- Education-->
 
-            <form method="post" action="/addExperience" >
+    <form method="post" action="/addExperience">
 
-                <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <!-- Begin Page Content -->
-                    <div class="container-fluid">
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Add Experience</h2>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
 
-
-                            <!-- Content Row -->
-                            <div class="row">
-                                <div class="col-xl-12 col-md-12 mb-12">
-                                    <div class="card shadow mb-4">
-                                        <div class="card-header py-3">
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12 mb-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Name Of The Job</label>
                                                 <div class="col-10">

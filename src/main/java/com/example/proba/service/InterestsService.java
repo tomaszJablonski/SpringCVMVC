@@ -30,7 +30,7 @@ public class InterestsService {
         interestsRepository.save(interests);
     }
 
-    public Interests getInterestsByid(Long id) {
+    public Interests getInterestsById(Long id) {
         return interestsRepository.findById(id).orElse(null);
     }
 

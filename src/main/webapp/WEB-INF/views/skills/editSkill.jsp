@@ -15,13 +15,13 @@
 <%@include file="../dynamic/navigation.jspf" %>
 <!-- Page Content-->
 <div class="container-fluid p-0">
-    <!-- Interests-->
 
-    <form method="post" action="/addInterestsDescription">
 
-        <section class="resume-section" id="interests">
+    <form method="post" action="/editSkill/${skill.id}">
+
+        <section class="resume-section" id="skill">
             <div class="resume-section-content">
-                <h2 class="mb-5">Add Interests</h2>
+                <h2 class="mb-5">Edit Skill</h2>
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
@@ -31,19 +31,22 @@
                         <div class="col-xl-12 col-md-12 mb-12">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                            <div class="form-group row">
-                                                <label for="start" class="col-2 col-form-label">Description</label>
-                                                <div class="col-10">
-                                <textarea class="form-control" rows="5" id="start" name="description"
-                                          placeholder="write here about your interests ..."></textarea>
-                                                </div>
-                                            </div>
-
+                                    <div class="form-group row">
+                                        <label for="start" class="col-2 col-form-label">Edit Abilities</label>
+                                        <div class="col-10">
+                                <textarea class="form-control" rows="5" id="start" name="talents"
+                                          placeholder="write here ...">${skill.talents}</textarea>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
+                        </div>
                     </div>
+
+
+                </div>
 
                 </div>
 
@@ -55,9 +58,9 @@
 
             <hr class="m-0" />
 
-            <%@include file="../dynamic/socialActions.jspf" %>
+<%@include file="../dynamic/socialActions.jspf" %>
 
         <!-- Bootstrap core JS-->
-            <%@include file="../dynamic/js.jspf"%>
+<%@include file="../dynamic/js.jspf" %>
     </body>
 </html>

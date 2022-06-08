@@ -20,9 +20,9 @@ public class ExperienceController {
     private final ExperienceService experienceService;
 
     @GetMapping("/experience")
-    public String getExperience(Model model) {
+    public String getAllExperience(Model model) {
         List<Experience> experienceList = experienceService.getAllExperience();
-        model.addAttribute("experience",experienceList);
+        model.addAttribute("experience", experienceList);
         return "/experience/experience";
     }
 

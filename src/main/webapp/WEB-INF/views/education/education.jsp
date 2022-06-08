@@ -48,16 +48,18 @@
                     </div>
                 </div>
 
-
-            </div>
-        </section>
-    </div>
-
-    <security:authorize access="hasRole('ROLE_ADMIN')">
-    <a href="addEducation"/>
-    <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję" id="searchButton1"></input>
+                <security:authorize access="hasRole('ROLE_ADMIN')">
+                <a href="addEducation"/>
+                <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję"
+                       id="searchButton1"></input>
 </a>
 </security:authorize>
+</div>
+
+</section>
+
+</div>
+
 
 <hr class="m-0"/>
 

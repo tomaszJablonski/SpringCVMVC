@@ -22,9 +22,9 @@ public class EducationController {
     }
 
     @GetMapping("/education")
-    public String getEducation(Model model) {
+    public String getAllEducation(Model model) {
         List<Education> educationList = educationService.getAllEducations();
-        model.addAttribute("education",educationList);
+        model.addAttribute("education", educationList);
         return "/education/education";
     }
 

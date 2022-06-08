@@ -17,14 +17,13 @@
 <div class="container-fluid p-0">
             <!-- Interests-->
 
-            <form method="post" action="/editInterestsDescription/${interests.id}" >
+            <form method="post" action="/editInterestsDescription/${interests.id}">
 
                 <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <!-- Begin Page Content -->
-                    <div class="container-fluid">
-
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Edit Interests</h2>
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
 
 
                             <!-- Content Row -->

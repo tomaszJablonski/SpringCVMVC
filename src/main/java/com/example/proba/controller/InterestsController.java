@@ -41,7 +41,7 @@ public class InterestsController {
 
     @GetMapping("/editInterestsDescription/{id}")
     public String getEditInterestsDescription(@PathVariable Long id, Model model) {
-        Interests interestsById = interestsService.getInterestsByid(id);
+        Interests interestsById = interestsService.getInterestsById(id);
         model.addAttribute("interests", interestsById);
         return "/interests/editInterestsDescription";
     }

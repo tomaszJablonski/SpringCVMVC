@@ -40,21 +40,22 @@
                                     </form>
                                 </security:authorize>
                             </c:forEach>
+                        </div>
                     </div>
-                    </div>
-
+                    <security:authorize access="hasRole('ROLE_ADMIN')">
+                        <a href="addExperience"/>
+                        <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję"
+                               id="searchButton1"></input>
+                        </a>
+                    </security:authorize>
                 </div>
             </section>
         </div>
-<security:authorize access="hasRole('ROLE_ADMIN')">
-    <a href="addExperience"/>
-    <input class="btn btn-success pull-left" type="submit" value="Dodaj nową pozycję" id="searchButton1"></input>
-    </a>
-</security:authorize>
-            <hr class="m-0" />
-            <%@include file="../dynamic/socialActions.jspf" %>
 
-        <!-- Bootstrap core JS-->
-            <%@include file="../dynamic/js.jspf"%>
-    </body>
+<hr class="m-0"/>
+<%@include file="../dynamic/socialActions.jspf" %>
+
+<!-- Bootstrap core JS-->
+<%@include file="../dynamic/js.jspf" %>
+</body>
 </html>

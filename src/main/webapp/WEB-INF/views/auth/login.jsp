@@ -24,22 +24,28 @@
                            aria-describedby="emailHelp" name="username" placeholder="enter your username...">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" name="password"
-                           id="exampleInputPassword" placeholder="enter your password...">
+                      <input type="password" class="form-control form-control-user" name="password"
+                             id="exampleInputPassword" placeholder="enter your password...">
                   </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox small">
-                      <input type="checkbox" class="custom-control-input" id="customCheck">
-                      <label class="custom-control-label" for="customCheck">Remember me</label>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck">
+                            <label class="custom-control-label" for="customCheck">Remember me</label>
+                        </div>
                     </div>
-                  </div>
-                  <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
-                  <hr>
+                    <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox small">
+                            <h6>Legend</h6>
+                            <div class="passes" id="passes">
+                                <h10>If you want login as admin: </br> Login:admin Password:admin</h10>
+                                <h10></br>If you want login as user: </br> Login:user Password:user</h10>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </form>
-<%--                <div class="text-center">--%>
-<%--                  <a class="small" href="register.jsp">Utwórz konto!</a>--%>
-<%--                </div>--%>
               </div>
             </div>
           </div>

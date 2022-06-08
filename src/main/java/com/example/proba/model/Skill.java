@@ -1,4 +1,4 @@
-package com.example.proba.model.Skills;
+package com.example.proba.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,11 +12,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Workflow {
+public class Skill {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "ABILITIES")
-    private String abilities;
+    @Column(name = "TALENTS")
+    private String talents;
 }

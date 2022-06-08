@@ -22,11 +22,27 @@
                         <span class="text-primary">Jabłoński</span>
                     </h1>
                     <div class="subheading mb-5">
-                        telephone number:111-111-111
-                        <a href="mailto:name@email.com">tjablonski1990@email.com</a>
+                        telephone number:500-380-413
+                        <a href="https://www.gmail.com">tjablonski1990@gmail.com</a>
                     </div>
                     <p class="lead mb-5">
-                        Welcome in my CV. I am future programmer. Add texts ...
+                        Welcome in my CV. My name is Tomasz Jabłoński. My dream is become a java programmer and make
+                        this
+                        web about me because I want show you my skills.
+                        </br></br>
+                        I use here SpringBoot WEB with MVC and Security in Intellij IDE.
+                        </br> </br>
+                        All data is save in database (MySQL). As admin you can add,edit and delete data from the
+                        database and as a user
+                        you can only to watch the page.
+                        </br></br>
+                        I use here Maven and all dependency is save in pom.xml.
+                        </br></br>
+                        I wrote all test and you can find them in folder test.
+                        </br></br>
+                        I hope you enjoy my work, and it will be the first step to our cooperation.
+                        </br></br>
+                        Have a good day :)
 
                     </p>
 

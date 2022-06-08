@@ -8,7 +8,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 
 @Entity
@@ -29,14 +28,11 @@ public class Education {
     @Column(name = "DESCRIPTION")
     private String description;
     @Column(name = "DATE_START")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date dateStart;
+    @DateTimeFormat(pattern = "yyyy-MM-dd", iso = DateTimeFormat.ISO.DATE)
+    private LocalDate dateStart;
+    @DateTimeFormat(pattern = "yyyy-MM-dd", iso = DateTimeFormat.ISO.DATE)
     @Column(name = "DATE_END")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date dateEnd;
-
-
-
+    private LocalDate dateEnd;
 
 
 }

@@ -12,8 +12,8 @@
     <artifactId>proba</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>proba</name>
-    <description>proba</description>
+    <name>SpringCV</name>
+    <description>SpringCV</description>
     <properties>
         <java.version>18</java.version>
     </properties>
@@ -70,6 +70,19 @@
             <artifactId>spring-security-taglibs</artifactId>
             <version>5.7.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <version>70.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -17,14 +17,13 @@
 <div class="container-fluid p-0">
             <!-- Experience-->
 
-            <form method="post" action="/editExperience/${experience.id}" >
+            <form method="post" action="/editExperience/${experience.id}">
 
                 <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <!-- Begin Page Content -->
-                    <div class="container-fluid">
-
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Edit Experience</h2>
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
 
 
                             <!-- Content Row -->
@@ -55,22 +54,18 @@
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Start your job</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="date" name="dateStart"  placeholder="enter date here yyyy-MM-dd"
-                                                           value="<fmt:formatDate type = "date" value = "${experience.dateStart}" />">
+                                                    <input class="form-control" type="date" name="dateStart"
+                                                           value="${experience.dateStart}">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">End your job</label>
                                                 <div class="col-10">
-                                                    <input class="form-control" type="date" name="dateEnd"  placeholder="enter date here yyyy-MM-dd"
-                                                           value="<fmt:formatDate type = "date" value = "${experience.dateEnd}" />">
+                                                    <input class="form-control" type="date" name="dateEnd"
+                                                           value="${experience.dateEnd}"/>
                                                 </div>
                                             </div>
-
-
-
-
 
 
                                         </div>

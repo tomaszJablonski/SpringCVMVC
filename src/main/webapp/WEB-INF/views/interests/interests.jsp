@@ -33,19 +33,22 @@
                             </form>
                         </security:authorize>
                     </c:forEach>
-                        </div>
+                    <br>
+                    <security:authorize access="hasRole('ROLE_ADMIN')">
+                        <a href="addInterestsDescription"/>
+                        <input class="btn btn-success pull-left" type="submit" value="Add Description"
+                               id="searchButton1"></input>
+                        </a>
+                    </security:authorize>
+                </div>
             </section>
-    <security:authorize access="hasRole('ROLE_ADMIN')">
-        <a href="addInterestsDescription"/>
-        <input class="btn btn-success pull-left" type="submit" value="Add Description" id="searchButton1"></input>
-        </a>
-    </security:authorize>
-        </div>
 
-            <hr class="m-0" />
-            <%@include file="../dynamic/socialActions.jspf" %>
+</div>
 
-        <!-- Bootstrap core JS-->
-            <%@include file="../dynamic/js.jspf"%>
-    </body>
+<hr class="m-0"/>
+<%@include file="../dynamic/socialActions.jspf" %>
+
+<!-- Bootstrap core JS-->
+<%@include file="../dynamic/js.jspf" %>
+</body>
 </html>
