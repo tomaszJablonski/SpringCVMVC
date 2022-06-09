@@ -27,29 +27,21 @@
                     </div>
                     <p class="lead mb-5">
                     <div class="indexDesc">
-                        Welcome in my CV. My name is Tomasz Jabłoński. My dream is become a java programmer and make
-                        this web because I want show you my skills.
+                        Hello everybody, my name is Tomasz Jabłoński and thank you for your interest in my Portfolio. My
+                        dream is become a java programmer so I made this website to show you my work.
                     </div>
 
                     <div class="indexDesc">
-                        I use here SpringBoot WEB with MVC and Security in Intellij IDE.
+                        I work with SpringBoot WEB with MVC and Security in Intellij IDE.
                     </div>
 
                     <div class="indexDesc">
-                        All data is save in database (MySQL). As admin you can add,edit and delete data from the
+                        All data is saved in the MySQL database . As an admin you can add, edit and delete data from the
                         database and as a user you can only to watch the page.
                     </div>
 
                     <div class="indexDesc">
-                        I use here Maven and all dependency is save in pom.xml.
-                    </div>
-
-                    <div class="indexDesc">
-                        I wrote all test and you can find them in folder test.
-                    </div>
-
-                    <div class="indexDesc">
-                        I hope you enjoy my work, and it will be the first step to our cooperation.
+                        I hope you enjoy my work, and feel free to contact me if you wish to begin a cooperation.
                     </div>
 
 
