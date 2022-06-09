@@ -14,15 +14,33 @@
 <body id="page-top">
 <!-- Navigation-->
         <%@include file="../dynamic/navigation.jspf" %>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <c:forEach items="${experience}" var="title">
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Selected professional experience</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <div class="flex-shrink-0"><span class="text-primary"> 1.03.2019 - 1.03.2020 </span></div>
+
+                    <h3 class="mb-0">Specjalista ds. Transportu</h3>
+                    <div class="subheading mb-3">Praca biurowa w firmie CORRECT</div>
+                    <p>Sprawdzanie faktur, wystawanie dokumentów dla kierowców oraz działu celnego. Wysyłanie dokumentów
+                        do działu księgowości oraz kontakt ze współpracującymi działami. Telefoniczna obsługa kierowców
+                        oraz podległych firm powierzonych. Obsługa MS OFFICE. </p>
+
+                    <div class="flex-shrink-0"><span class="text-primary"> 1.12.2018 - 28.02.2019 </span></div>
+
+                    <h3 class="mb-0">Stanowisko Specjalista ds. Exportu</h3>
+                    <div class="subheading mb-3">Praca biurowa COM40/CORRECT</div>
+                    <p>Wystawianie dokumentów dla samochodów kursujących na Białoruś. Tworzenie i obsługa zamówień,
+                        wystawianie i drukowanie faktur; MS OFFICE (głównie EXCEL i WORD) – tworzenie od podstaw
+                        faktury, używanie formuł w EXCEL. Kontaktowanie się z innymi działami w firmie oraz na Białorusi
+                        w sprawach zamówień pod wysyłkę.</p>
+
+
+                    <c:forEach items="${experience}" var="title">
                                 <div class="flex-shrink-0"><span class="text-primary">${title.dateStart} - ${title.dateEnd}</span></div>
 
                                 <h3 class="mb-0">${title.nameOfTheJob}</h3>

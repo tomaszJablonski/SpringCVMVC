@@ -15,11 +15,16 @@
 <!-- Page Content-->
 <div class="container-fluid p-0">
 
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <c:forEach items="${interests}" var="title">
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>Learning English</p>
+            <p>Reading books and magazine about IT</p>
+            <p>Learning for better programming </p>
+            <p>Codewars</p>
+
+            <c:forEach items="${interests}" var="title">
                         <p>${title.description}</p>
 
                         <security:authorize access="hasRole('ROLE_ADMIN')">

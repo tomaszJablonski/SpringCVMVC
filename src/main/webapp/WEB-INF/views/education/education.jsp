@@ -20,9 +20,33 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-
-
                     <div class="flex-grow-1">
+                        <div class="flex-shrink-0"><span class="text-primary">1.10.2021 - 3.07.2022</span></div>
+
+                        <h3 class="mb-0">Software Development Academy</h3>
+                        <div class="subheading mb-3">Kurs Java</div>
+                        <div>Kurs z programowani w języku Java wraz z podstawami z tworzenia stron internetowych.</div>
+
+
+                        <div class="flex-shrink-0"><span class="text-primary">1.10.2010 - 25.05.2013</span></div>
+
+                        <h3 class="mb-0">Państwowa Wyższa Szkoła Zawodowa w Kaliszu</h3>
+                        <div class="subheading mb-3">Kierunek Zarządzania Mediami</div>
+                        <div>Kierunek z zakresu poznawania funkcjonowania mediów na świecie, w tym kamer oraz tworzenie
+                            obrazu.
+                        </div>
+
+
+                        <div class="flex-shrink-0"><span class="text-primary">1.09.2006 - 28.06.2010</span></div>
+
+                        <h3 class="mb-0">Zespół szkół Ponad gimnazjalnych Nr 2 w Kaliszu</h3>
+                        <div class="subheading mb-3">Technikum Informatyczne</div>
+                        <div> Czteroletnie technikum w tematyce komputerowej. Tworzenie baz danych, pisanie programów
+                            oraz
+                            poznawanie architektury sieci komputerowych.
+                        </div>
+
+
                         <c:forEach items="${education}" var="title">
                             <div class="flex-shrink-0"><span class="text-primary"
                                                              type="date">${title.dateStart} - ${title.dateEnd}</span>

@@ -50,17 +50,48 @@
 
 
             <div class="subheading mb-3">Skills</div>
-            <c:forEach items="${talents}" var="title">
-                <ul class="fa-ul mb-0">
-                    <li>
-                            ${title.talents}
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Obsługa programu Postman
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Obsługa programu Brackets
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Design Patterns
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    SOLID
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    FIRST
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    CLEAN CODE
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Język angielski - średniozaawansowny
+                </li>
 
-                    </li>
-                </ul>
-                <security:authorize access="hasRole('ROLE_ADMIN')">
-                    <a href="/editSkill/${title.id}">
-                        <input class="btn btn-success pull-left" type="submit" value="Edit"
+
+                <c:forEach items="${talents}" var="title">
+
+                <li>
+                        ${title.talents}
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+
+                </li>
+            </ul>
+            <security:authorize access="hasRole('ROLE_ADMIN')">
+                <a href="/editSkill/${title.id}">
+                    <input class="btn btn-success pull-left" type="submit" value="Edit"
                                id="searchButton"></input>
                     </a>
                     <form method="post" action='<c:url value="/deleteSkill/${title.id}"/>'>
